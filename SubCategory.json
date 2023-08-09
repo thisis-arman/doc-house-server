@@ -1,0 +1,65 @@
+[
+    {
+        "services":"Teeth Orthodontics",
+        "isAvailable":true,
+        "time":"9.15AM-9.40AM",
+        "category":"Cosmetic Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Cosmetic Dentisty",
+        "isAvailable":true,
+        "time":"9.45AM-10.20AM",
+        "category":"Teeth Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Teeth Cleaning",
+        "isAvailable":true,
+        "time":"9.15AM-9.40AM",
+        "category":"Cavity Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Cavity Protection",
+        "isAvailable":true,
+        "time":"3.15PM-3.40PM",
+        "category":"Cavity Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Pediatric Dental",
+        "isAvailable":true,
+        "time":"10.15AM-10.40AM",
+        "category":"Pediatric Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Oral Surgery",
+        "isAvailable":true,
+        "time":"11.15AM-11.40AM",
+        "category":"Pediatric Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Oral Surgery",
+        "isAvailable":true,
+        "time":"11.15AM-11.40AM",
+        "category":"Pediatric Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Oral Surgery",
+        "isAvailable":true,
+        "time":"11.15AM-11.40AM",
+        "category":"Pediatric Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    },
+    {
+        "services":"Oral Surgery",
+        "isAvailable":true,
+        "time":"11.15AM-11.40AM",
+        "category":"Pediatric Orthodontics",
+        "image":"https://i.ibb.co/6tSM57W/mari-teeth.png"
+    }
+]

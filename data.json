@@ -1,0 +1,291 @@
+[
+    {
+        "profile": {
+
+          "name": "Dr. Ruby Perrin",
+          "_id":101,
+          "expertise": "MBBS,MD- General Medicine",
+          "ratings": 4.5,
+          "numberOfReviews": 45,
+          "consultFee":15,
+          "Chamber": "603 No Room, Appolo, Dhaka",
+          "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+          "images": [
+            "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+            "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+          ],
+          "services": ["Dental Filling", "Teeth Whitening"]
+        },
+        "overview": {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "education": [
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          },
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          }
+        ],
+        "services":["Dental Filling","Teeth Whitening","Composite Bonding","Implants"],
+        "awards":[
+          {
+              "awardName":"Humanitarian Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        },
+          {
+              "awardName":"International  Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        }
+      
+      
+      ]
+      },
+      
+      {
+        "profile": {
+          "name": "Dr. Fatema Sumenur",
+          "_id":102,
+          "expertise": "MBBS,MD- General Medicine",
+          "ratings": 4.5,
+          "consultFee":15,"numberOfReviews": 45,
+          "Chamber": "603 No Room, Appolo, Dhaka",
+          "drImage": "https://i.ibb.co/q0VFGKt/doctor-1.png",
+          "images": [
+            "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+            "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+          ],
+          "services": ["Dental Filling", "Teeth Whitening"]
+        },
+        "overview": {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "education": [
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          },
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          },
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          }
+        ],
+        "services":["Dental Filling","Teeth Whitening","Composite Bonding","Implants"],
+        "awards":[
+          {
+              "awardName":"Humanitarian Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        },
+          {
+              "awardName":"International  Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        }
+      
+      
+      ]
+      },
+      
+      {
+        "profile": {
+          "name": "Dr. Samia Perrin",
+          "_id":103,
+          "expertise": "MBBS,MD- General Medicine",
+          "ratings": 4.5,
+          "consultFee":15,"numberOfReviews": 45,
+          "Chamber": "603 No Room, Appolo, Dhaka",
+          "drImage": "https://i.ibb.co/MMFGqBq/doctor-4.png",
+          "images": [
+            "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+            "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+          ],
+          "services": ["Dental Filling", "Teeth Whitening"]
+        },
+        "overview": {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "education": [
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          },
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          }
+        ],
+        "services":["Dental Filling","Teeth Whitening","Composite Bonding","Implants"],
+        "awards":[
+          {
+              "awardName":"Humanitarian Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        },
+          {
+              "awardName":"International  Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        }
+      
+      
+      ]
+      },
+      
+      {
+        "profile": {
+          "name": "Dr. Farjana Perrin",
+          "_id":104,
+          "expertise": "MBBS,MD- General Medicine",
+          "ratings": 4.5,
+          "consultFee":15,"numberOfReviews": 45,
+          "Chamber": "603 No Room, Appolo, Dhaka",
+          "drImage": "https://i.ibb.co/c6SSk2y/doctor-3.png",
+          "images": [
+            "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+            "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+          ],
+          "services": ["Dental Filling", "Teeth Whitening"]
+        },
+        "overview": {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "education": [
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          },
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          }
+        ],
+        "services":["Dental Filling","Teeth Whitening","Composite Bonding","Implants"],
+        "awards":[
+          {
+              "awardName":"Humanitarian Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        },
+          {
+              "awardName":"International  Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        }
+      
+      
+      ]
+      },
+      
+      {
+        "profile": {
+          "name": "Dr. Rubana Perrin",
+          "_id":105,
+          "expertise": "MBBS,MD- General Medicine",
+          "ratings": 4.5,
+          "consultFee":15,"numberOfReviews": 45,
+          "Chamber": "603 No Room, Appolo, Dhaka",
+          "drImage": "https://i.ibb.co/BVTWkhq/doctor-2.png",
+          "images": [
+            "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+            "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+          ],
+          "services": ["Dental Filling", "Teeth Whitening"]
+        },
+        "overview": {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "education": [
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          },
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          }
+        ],
+        "services":["Dental Filling","Teeth Whitening","Composite Bonding","Implants"],
+        "awards":[
+          {
+              "awardName":"Humanitarian Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        },
+          {
+              "awardName":"International  Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        }
+      
+      
+      ]
+      },
+      
+      {
+        "profile": {
+          "name": "Dr. Sharmin Perrin",
+          "_id":106,
+          "expertise": "MBBS,MD- General Medicine",
+          "ratings": 4.5,
+          "consultFee":15,"numberOfReviews": 45,
+          "Chamber": "603 No Room, Appolo, Dhaka",
+          "drImage": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?w=900&t=st=1691231303~exp=1691231903~hmac=187340e106dffb01769f7b541325a5bbce2593022c1c37bdb135f813b3b0fc7e",
+          "images": [
+            "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+            "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+          ],
+          "services": ["Dental Filling", "Teeth Whitening"]
+        },
+        "overview": {
+          "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "education": [
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          },
+          {
+            "institution": "American Dental University",
+            "nameOfDegree": "BDS",
+            "Duration": "2005-2009"
+          }
+        ],
+        "services":["Dental Filling","Teeth Whitening","Composite Bonding","Implants"],
+        "awards":[
+          {
+              "awardName":"Humanitarian Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        },
+          {
+              "awardName":"International  Award",
+              "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute"
+      
+        }
+      
+      
+      ]
+      }
+      
+]
