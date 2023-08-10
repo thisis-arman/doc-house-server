@@ -1,0 +1,128 @@
+[
+    {
+        "profile": {
+
+            "name": "Dr. Fatema Perrin",
+            "expertise": "MBBS,MD- General Medicine",
+            "ratings": 4.5,
+            "numberOfReviews": 45,
+            "consultFee":15,
+            "Chamber": "603 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+            "images": [
+              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+            ],
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    },
+    {
+        "profile": {
+
+            "name": "Dr. Ruby Perrin",
+            "expertise": "BDS, MDS - Endodontics",
+            "ratings": 4.5,
+            "numberOfReviews": 45,
+            "consultFee":15,
+            "Chamber": "603 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+            "images": [
+              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+            ],
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    },
+    {
+        "profile": {
+
+            "name": "Dr. Isma Perrin",
+            "expertise": "BDS, MDS - Oral and Maxillofacial Surgery",
+            "ratings": 4.5,
+            "numberOfReviews": 45,
+            "consultFee":15,
+            "Chamber": "603 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+            "images": [
+              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+            ],
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    },
+    {
+        "profile": {
+
+            "name": "Dr. Hamza Siddiqui",
+            "expertise": "BDS, MDS - Prosthodontics",
+            "ratings": 4.5,
+            "numberOfReviews": 45,
+            "consultFee":15,
+            "Chamber": "603 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+            "images": [
+              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+            ],
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    },
+    {
+        "profile": {
+
+            "name": "Dr. Anil Sharma",
+            "expertise": "BDS, MDS - Periodontics",
+            "ratings": 4.5,
+            "numberOfReviews": 45,
+            "consultFee":25,
+            "Chamber": "603 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+            "images": [
+              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+            ],
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    },
+    {
+        "profile": {
+
+            "name": "Dr. Safiya Aziz",
+            "expertise": "BDS, MDS - Orthodontics",
+            "ratings": 4.5,
+            "numberOfReviews": 35,
+            "consultFee":12,
+            "Chamber": "501 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+            "images": [
+              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+            ],
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    },
+    {
+        "profile": {
+
+            "name": "Dr. Aisha Malik",
+            "expertise": "DDS - Dentist, Doctor of Dental Surgery",
+            "ratings": 4.5,
+            "numberOfReviews": 45,
+            "consultFee":15,
+            "Chamber": "403 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
+            "images": [
+              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
+              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
+            ],
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    }
+]

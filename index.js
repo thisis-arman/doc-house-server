@@ -17,7 +17,7 @@ app.use(express.json());
 const data = require("./data.json");
 
 // MongoDb Starts
-// TODO:Scequre pass
+// TODO:secure pass
 const uri =
   "mongodb+srv://docHouse:wn0vd7kRX9B4CfhJ@cluster0.kwah0lw.mongodb.net/?retryWrites=true&w=majority";
 
@@ -39,6 +39,7 @@ async function run() {
     const subCategoryCollection = client.db("docHouseDB").collection("subCategory");
     const usersCollection = client.db("docHouseDB").collection("users");
     const doctorsCollection = client.db("docHouseDB").collection("doctors");
+    const appointmentsCollection = client.db("docHouseDB").collection("appointments");
 
     app.get("/services", async (req, res) => {
       const query = {};
@@ -53,6 +54,8 @@ async function run() {
     });
 
     // Post APIS
+
+    // USERS APIs
 
     // Get all users
     app.get("/users", async (req, res) => {
@@ -82,7 +85,13 @@ async function run() {
     });
 
 
-// Services API 
+// Appointment APIs
+
+app.post('/appointment',async(req,res)=>{
+  const appointment = req.body;
+  const result = await appointmentsCollection.insertOne(appointment);
+  console.log(result)
+})
 
 
 // Doctors APIs
@@ -100,6 +109,7 @@ app.post('/doctors',async(req,res)=>{
 app.get('/doctors',async(req,res)=>{
   const query = {};
   const result = await doctorsCollection.find(query).toArray();
+  res.send(result)
 })
 // Get single Doctor
 app.get('/doctors/:email',async(req,res)=>{
