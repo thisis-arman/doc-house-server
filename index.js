@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 // const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const express = require("express");
 const cors = require("cors");
@@ -57,6 +57,8 @@ async function run() {
 
     // USERS APIs
 
+   
+
     // Get all users
     app.get("/users", async (req, res) => {
       const query = {};
@@ -87,12 +89,24 @@ async function run() {
 
 // Appointment APIs
 
-app.post('/appointment',async(req,res)=>{
+app.post('/appointments',async(req,res)=>{
   const appointment = req.body;
   const result = await appointmentsCollection.insertOne(appointment);
   console.log(result)
 })
+app.get('/appointments/:email',async(req,res)=>{
+  const email = req.params.email;
+  const query = {email: email}
+  const result = await appointmentsCollection.find(query).toArray();
+  res.send(result)
+})
 
+app.get('/appointments',async(req,res)=>{
+  const query = {};
+  const result = await appointmentsCollection.find(query).toArray();
+  console.log(result)
+  res.send(result)
+})
 
 // Doctors APIs
 app.post('/doctors',async(req,res)=>{
@@ -118,6 +132,45 @@ app.get('/doctors/:email',async(req,res)=>{
   const result = await doctorsCollection.findOne(query)
   res.send(result)
 })
+
+app.get('/doctor/:id',async(req,res)=>{
+  const id = req.params.id;
+  const query ={_id :new ObjectId(id)}
+  const result =await doctorsCollection.findOne(query)
+  res.send(result)
+})
+
+
+
+
+
+
+
+
+
+// -----------------------------
+// SOCKET.IO
+// ------------------------------
+ const chats = require('./chats.json');
+
+app.get('/api/chats',(req,res)=>{
+  res.send(chats)
+})
+
+app.get('/api/chats/:id',(req,res)=>{
+   const singleChat = chats.find(c => c._id== req.params.id )
+   res.send(singleChat)
+})
+
+
+
+
+
+
+
+
+
+
 
 
     await client.db("admin").command({ ping: 1 });
