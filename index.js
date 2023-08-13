@@ -40,6 +40,7 @@ async function run() {
     const usersCollection = client.db("docHouseDB").collection("users");
     const doctorsCollection = client.db("docHouseDB").collection("doctors");
     const appointmentsCollection = client.db("docHouseDB").collection("appointments");
+    const mainCollection = client.db("docHouseDB").collection("main");
 
     app.get("/services", async (req, res) => {
       const query = {};
@@ -140,7 +141,19 @@ app.get('/doctor/:id',async(req,res)=>{
   res.send(result)
 })
 
+// Main collection
 
+app.get('/api/all-info',async(req,res)=>{
+  const result = await mainCollection.find().toArray()
+  res.send(result)
+})
+
+app.get('/api/all-info/:id',async(req,res)=>{
+  const id = req.params.id;
+  const query = {_id: new ObjectId(id)}
+  const result = await mainCollection.findOne(query);
+  res.send(result)
+})
 
 
 
