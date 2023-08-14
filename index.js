@@ -155,6 +155,42 @@ app.get('/api/all-info/:id',async(req,res)=>{
   res.send(result)
 })
 
+/* app.put('/api/update-about/:id',async(req,res)=>{
+  const id = req.params.id;
+const {updatedAbout} = req.body;
+  console.log(updatedAbout)
+  const filter = {_id: new ObjectId(id)}
+ const option = {
+  upsert :true
+ }
+  const updateDoc = {
+    $set :{aboutMe :updatedAbout }
+  }
+  const result = await mainCollection.findOneAndUpdate(filter,updateDoc,option);
+  console.log(result)
+  res.send(result)
+}) */
+
+//update steward text
+app.put("/api/all-info/:id", async (req, res) => {
+  const updatedAbout = req.body;
+  console.log(updatedAbout)
+  const id = req.params.id;
+  const filter = { _id: new ObjectId(id) };
+  const option = {
+    upsert :true
+   }
+  const updateDoc = {
+    $set: {
+      aboutMe: updatedAbout,
+    },
+  };
+  const result = await mainCollection.updateOne(filter, updateDoc,option);
+  console.log(result);
+  res.send(result);
+});
+
+
 
 
 
