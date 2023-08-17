@@ -95,14 +95,24 @@ app.post('/appointments',async(req,res)=>{
   const result = await appointmentsCollection.insertOne(appointment);
   console.log(result)
 })
-app.get('/appointments/:email',async(req,res)=>{
+/* app.get('/appointments/:email',async(req,res)=>{
   const email = req.params.email;
   const query = {email: email}
   const result = await appointmentsCollection.find(query).toArray();
   res.send(result)
+}) */
+
+app.get('/api/appointments/:id',async(req,res)=>{
+  const id = req.params.id;
+  console.log(id)
+  const query ={doctorID : parseInt(id)}
+  console.log(query)
+  const appointment = await appointmentsCollection.find(query).toArray()
+  // console.log(appointment)
+  res.send(appointment)
 })
 
-app.get('/appointments',async(req,res)=>{
+app.get('/api/appointments',async(req,res)=>{
   const query = {};
   const result = await appointmentsCollection.find(query).toArray();
   console.log(result)
