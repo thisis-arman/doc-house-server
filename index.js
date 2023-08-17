@@ -171,9 +171,19 @@ const {updatedAbout} = req.body;
   res.send(result)
 }) */
 
+
+
+app.get('/api/all-info-by/:email',async(req,res)=>{
+  const email = req.params.email;
+  const query ={email : email};
+  const doctorInfo = await mainCollection.findOne(query);
+  res.send(doctorInfo)
+})
+
+
 //update steward text
 app.put("/api/all-info/:id", async (req, res) => {
-  const updatedAbout = req.body;
+  const {updatedAbout} = req.body;
   console.log(updatedAbout)
   const id = req.params.id;
   const filter = { _id: new ObjectId(id) };
