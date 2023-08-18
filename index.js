@@ -3,6 +3,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const stripe = require('stripe')('sk_test_51NEOh0J6vP03PB2IYLUQMU3ol2sM8jIvCuIY7rCh7saHtgifFFFBbZxLnRtzeOByCxL7oPhtWnxnXhaSMXFWOaBc00FH0XMu1u')
 const port = process.env.PORT || 5000;
 const corsConfig = {
   origin: "*",
@@ -15,6 +16,7 @@ app.options("", cors(corsConfig));
 app.use(express.json());
 
 const data = require("./data.json");
+const { default: Stripe } = require("stripe");
 
 // MongoDb Starts
 // TODO:secure pass
@@ -95,12 +97,12 @@ app.post('/appointments',async(req,res)=>{
   const result = await appointmentsCollection.insertOne(appointment);
   console.log(result)
 })
-/* app.get('/appointments/:email',async(req,res)=>{
+app.get('/appointments/:email',async(req,res)=>{
   const email = req.params.email;
   const query = {email: email}
   const result = await appointmentsCollection.find(query).toArray();
   res.send(result)
-}) */
+})
 
 app.get('/api/appointments/:id',async(req,res)=>{
   const id = req.params.id;
@@ -210,6 +212,22 @@ app.put("/api/all-info/:id", async (req, res) => {
   res.send(result);
 });
 
+
+// Payments
+
+app.post('create-payment-intents',async(req,res)=>{
+  const {price}= req.body;
+  const amount = price *100;
+  const paymentIntent =await stripe.paymentIntent.create({
+    amount :amount,
+    currency :'usd',
+    payment_method_types:['card']
+
+  })
+  res.send({
+    clientSecret :paymentIntent.client_secret
+  })
+})
 
 
 
