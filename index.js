@@ -104,8 +104,8 @@ app.get('/appointments/:email',async(req,res)=>{
   res.send(result)
 })
 
-app.get('/api/appointments/:id',async(req,res)=>{
-  const id = req.params.id;
+app.get('/api/appointments/:doctorId',async(req,res)=>{
+  const id = req.params.doctorId;
   console.log(id)
   const query ={doctorID : parseInt(id)}
   console.log(query)
@@ -113,6 +113,14 @@ app.get('/api/appointments/:id',async(req,res)=>{
   // console.log(appointment)
   res.send(appointment)
 })
+
+app.get('/api/appointment/:id',async(req,res)=>{
+  const id = req.params.id;
+  const query ={_id : new ObjectId(id)}
+  const appointment = await appointmentsCollection.find(query).toArray()
+  res.send(appointment)
+})
+
 
 app.get('/api/appointments',async(req,res)=>{
   const query = {};
