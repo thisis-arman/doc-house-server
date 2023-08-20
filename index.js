@@ -43,6 +43,7 @@ async function run() {
     const doctorsCollection = client.db("docHouseDB").collection("doctors");
     const appointmentsCollection = client.db("docHouseDB").collection("appointments");
     const mainCollection = client.db("docHouseDB").collection("main");
+    const paymentCollection = client.db("docHouseDB").collection("payment");
 
     app.get("/services", async (req, res) => {
       const query = {};
@@ -223,20 +224,6 @@ app.put("/api/all-info/:id", async (req, res) => {
 
 // Payments
 
- // create payment intent
- /* app.post('/create-payment-intent', verifyJWT, async (req, res) => {
-  const { price } = req.body;
-  const amount = parseInt(price * 100);
-  const paymentIntent = await stripe.paymentIntents.create({
-    amount: amount,
-    currency: 'usd',
-    payment_method_types: ['card']
-  });
-
-  res.send({
-    clientSecret: paymentIntent.client_secret
-  })
-}) */
 
 app.post('/create-payment-intent',async(req,res)=>{
   const {fee}= req.body;
@@ -247,7 +234,7 @@ app.post('/create-payment-intent',async(req,res)=>{
   const paymentIntent =await stripe.paymentIntents.create({
     amount :amount,
     currency :'usd',
-    payment_method_types:['card']
+    payment_method_types: ['card']
 
   })
   res.send({
@@ -255,7 +242,12 @@ app.post('/create-payment-intent',async(req,res)=>{
   })
 })
 
-
+// Payments api
+app.post('/payment',async(req,res)=>{
+  const paymentInfo = req.body;
+  const result = await paymentCollection.insertOne(paymentInfo)
+  res.send(result);
+})
 
 
 
