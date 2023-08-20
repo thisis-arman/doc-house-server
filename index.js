@@ -248,6 +248,18 @@ app.post('/payment',async(req,res)=>{
   const result = await paymentCollection.insertOne(paymentInfo)
   res.send(result);
 })
+app.get('/payment',async(req,res)=>{
+  
+  const result = await paymentCollection.find().toArray()
+  res.send(result);
+})
+app.get('/payment/:email',async(req,res)=>{
+  const email = req.body.email;
+  const query = { userEmail: email}
+  const payment = await paymentCollection.find(query).toArray();
+  res.send(payment);
+
+})
 
 
 
