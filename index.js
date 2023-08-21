@@ -77,6 +77,15 @@ async function run() {
       const result = await usersCollection.findOne(query)
       res.send(result)
     })
+
+    app.delete('/api/users/:id',async(req,res)=>{
+      const id = req.params.id;
+      const query = { _id :new ObjectId(id)};
+      const result = await usersCollection.deleteOne(query)
+      res.send(result)
+    })
+
+
     
     // User posting to mongoDB
     app.post("/users", async (req, res) => {
@@ -254,7 +263,7 @@ app.get('/payment',async(req,res)=>{
   res.send(result);
 })
 app.get('/payment/:email',async(req,res)=>{
-  const email = req.body.email;
+  const email = req.params.email;
   const query = { userEmail: email}
   const payment = await paymentCollection.find(query).toArray();
   res.send(payment);
