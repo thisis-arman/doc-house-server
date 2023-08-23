@@ -78,8 +78,9 @@ async function run() {
       res.send(result)
     })
 
-    app.delete('/api/users/:id',async(req,res)=>{
+    app.delete('/users/:id',async(req,res)=>{
       const id = req.params.id;
+      console.log(id)
       const query = { _id :new ObjectId(id)};
       const result = await usersCollection.deleteOne(query)
       res.send(result)
@@ -148,6 +149,20 @@ app.post('/doctors',async(req,res)=>{
     return console.log({message:"You're already in our list"})
   }
   const result = await doctorsCollection.insertOne(doctor)
+})
+
+
+app.patch('/api/doctor/:id',async(req,res)=>{
+  const id = req.params.id;
+  const filter = {_id:new ObjectId(id)}
+  const updateDoc ={
+    $set:{
+      status:'active'
+
+    }
+  }
+  const updatedDoctor = await usersCollection.updateOne(filter,updateDoc)
+  res.send(updatedDoctor)
 })
 
 // Get all the doctors
