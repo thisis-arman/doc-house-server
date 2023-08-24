@@ -101,6 +101,20 @@ async function run() {
     });
 
 
+  app.patch('/api/users/:id',async(req,res)=>{
+    const id = req.params.id;
+    const filter = {_id : new ObjectId(id)};
+    const updateDoc = {
+      $set:{
+        role: 'admin',
+      }
+    }
+
+    const updatedUser = await usersCollection.updateOne(filter, updateDoc);
+    res.send(updatedUser)
+  })
+
+
 // Appointment APIs
 
 app.post('/appointments',async(req,res)=>{
@@ -158,12 +172,13 @@ app.patch('/api/doctor/:id',async(req,res)=>{
   const updateDoc ={
     $set:{
       status:'active'
-
     }
   }
   const updatedDoctor = await usersCollection.updateOne(filter,updateDoc)
   res.send(updatedDoctor)
 })
+
+
 
 // Get all the doctors
 app.get('/doctors',async(req,res)=>{
