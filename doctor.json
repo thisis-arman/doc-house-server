@@ -2,17 +2,19 @@
     {
         "profile": {
 
-            "name": "Dr. Fatema Perrin",
+          "doctorID":45372,
+          "status":"active",
+          "phone":987654345678,
+        
+          "email":"FatemaPerrin@gmail.com",  
+          "name": "Dr. Fatema Perrin",
             "expertise": "MBBS,MD- General Medicine",
             "ratings": 4.5,
-            "numberOfReviews": 45,
-            "consultFee":15,
+            "numberOfReviews": 435,
+            "consultFee":55,
             "Chamber": "603 No Room, Appolo, Dhaka",
-            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
-            "images": [
-              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
-              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
-            ],
+            "drImage": "https://scontent.fcgp4-1.fna.fbcdn.net/v/t39.30808-6/318098758_884662266302734_8004935097768564361_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF4hDC8EfCjeUgJXXHy3mwJw0m7C-TRPojDSbsL5NE-iOZmcQcEseT6GW68IrmoofOLroqse66a3gZVjbl-uJGD&_nc_ohc=fLFbydlOKZwAX9Up1JJ&_nc_zt=23&_nc_ht=scontent.fcgp4-1.fna&oh=00_AfCgk4pbCwVXO9Z2ZaMyZRtihMHPFvnvSctqL9I-hEv_WA&oe=64EF5645",
+            "Bio":"Dedicated medical practitioner with expertise in MBBS,MD- General Medicine. Committed to compassionate patient care and global health impact. Medical degree from Chittagong Medical.",
             "services": ["Dental Filling", "Teeth Whitening"]
           }
           
@@ -20,17 +22,19 @@
     {
         "profile": {
 
-            "name": "Dr. Ruby Perrin",
+          "doctorID":41172,
+          "status":"active",
+          "phone":987654345678,
+        
+          "email":"RubyPerrin@gmail.com",  
+          "name": "Dr. Ruby Perrin",
             "expertise": "BDS, MDS - Endodontics",
             "ratings": 4.5,
-            "numberOfReviews": 45,
-            "consultFee":15,
+            "numberOfReviews": 145,
+            "consultFee":35,
             "Chamber": "603 No Room, Appolo, Dhaka",
             "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
-            "images": [
-              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
-              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
-            ],
+            "Bio":"Dedicated medical practitioner with expertise in BDS, MDS - Endodontics. Committed to compassionate patient care and global health impact. Medical degree from Chittagong Medical.",
             "services": ["Dental Filling", "Teeth Whitening"]
           }
           
@@ -38,17 +42,19 @@
     {
         "profile": {
 
-            "name": "Dr. Isma Perrin",
+          "doctorID":42272,
+          "status":"active",
+          "phone":987654345678,
+        
+          "email":"ismaperrin@gmail.com",  
+          "name": "Dr. Isma Perrin",
             "expertise": "BDS, MDS - Oral and Maxillofacial Surgery",
             "ratings": 4.5,
-            "numberOfReviews": 45,
-            "consultFee":15,
+            "numberOfReviews": 345,
+            "consultFee":45,
             "Chamber": "603 No Room, Appolo, Dhaka",
             "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
-            "images": [
-              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
-              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
-            ],
+            "Bio":"Dedicated medical practitioner with expertise in BDS, MDS - Oral and Maxillofacial Surgery. Committed to compassionate patient care and global health impact. Medical degree from Chittagong Medical.",
             "services": ["Dental Filling", "Teeth Whitening"]
           }
           
@@ -56,35 +62,19 @@
     {
         "profile": {
 
-            "name": "Dr. Hamza Siddiqui",
+          "doctorID":44672,
+          "status":"active",
+          "phone":987654345678,
+        
+          "email":"hamzasiddiqui@gmail.com",  
+          "name": "Dr. Hamza Siddiqui",
             "expertise": "BDS, MDS - Prosthodontics",
             "ratings": 4.5,
-            "numberOfReviews": 45,
-            "consultFee":15,
-            "Chamber": "603 No Room, Appolo, Dhaka",
-            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
-            "images": [
-              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
-              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
-            ],
-            "services": ["Dental Filling", "Teeth Whitening"]
-          }
-          
-    },
-    {
-        "profile": {
-
-            "name": "Dr. Anil Sharma",
-            "expertise": "BDS, MDS - Periodontics",
-            "ratings": 4.5,
-            "numberOfReviews": 45,
+            "numberOfReviews": 545,
             "consultFee":25,
             "Chamber": "603 No Room, Appolo, Dhaka",
-            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
-            "images": [
-              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
-              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
-            ],
+            "drImage": "https://i.ibb.co/NKnSFVB/doctor-5.png",
+            "Bio":"Dedicated medical practitioner with expertise in BDS, MDS - Prosthodontics. Committed to compassionate patient care and global health impact. Medical degree from Chittagong Medical.",
             "services": ["Dental Filling", "Teeth Whitening"]
           }
           
@@ -92,35 +82,59 @@
     {
         "profile": {
 
-            "name": "Dr. Safiya Aziz",
+          "doctorID":45572,
+          "status":"active",
+          "phone":987654345678,
+        
+          "email":"anilasharma@gmail.com",  
+          "name": "Dr. Anil Sharma",
+            "expertise": "BDS, MDS - Periodontics",
+            "ratings": 4.5,
+            "numberOfReviews": 425,
+            "consultFee":35,
+            "Chamber": "603 No Room, Appolo, Dhaka",
+            "drImage": "https://i.ibb.co/MMFGqBq/doctor-4.png",
+            "Bio":"Dedicated medical practitioner with expertise in BDS, MDS - Periodontics. Committed to compassionate patient care and global health impact. Medical degree from Chittagong Medical.",
+            "services": ["Dental Filling", "Teeth Whitening"]
+          }
+          
+    },
+    {
+        "profile": {
+
+          "doctorID":45677,
+          "status":"active",
+          "phone":987654345678,
+        
+          "email":"safiyaaziz@gmail.com",  
+          "name": "Dr. Safiya Aziz",
             "expertise": "BDS, MDS - Orthodontics",
             "ratings": 4.5,
-            "numberOfReviews": 35,
-            "consultFee":12,
+            "numberOfReviews": 345,
+            "consultFee":45,
             "Chamber": "501 No Room, Appolo, Dhaka",
-            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
-            "images": [
-              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
-              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
-            ],
+            "drImage": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?w=900&t=st=1693140698~exp=1693141298~hmac=8b7fd88179a494dc367208e756f8e1244b1ed407db03a3d6c3cb4e07c4d9d196",
+            "Bio":"Dedicated medical practitioner with expertise in BDS, MDS - Orthodontics. Committed to compassionate patient care and global health impact. Medical degree from Chittagong Medical.",
             "services": ["Dental Filling", "Teeth Whitening"]
           }
           
     },
     {
         "profile": {
-
-            "name": "Dr. Aisha Malik",
+            
+          "doctorID":45622,
+          "status":"active",
+          "phone":9854345678,
+        
+          "email":"aishamalik@gmail.com",  
+          "name": "Dr. Aisha Malik",
             "expertise": "DDS - Dentist, Doctor of Dental Surgery",
             "ratings": 4.5,
             "numberOfReviews": 45,
             "consultFee":15,
             "Chamber": "403 No Room, Appolo, Dhaka",
-            "drImage": "https://i.ibb.co/T2cmY4D/doctor-6.png",
-            "images": [
-              "https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=900&t=st=1691231230~exp=1691231830~hmac=4b763e4d28b70b6cc8cb9ff8014524bf22b937a6a7cf49d993bc372a6e37cf82",
-              "https://img.freepik.com/free-photo/dentist-examining-woman-teeth-with-diagnostic-microscope_651396-1870.jpg?w=900&t=st=1691231253~exp=1691231853~hmac=e943353d962ca52d193f863302ac68a2a6bac715738aefc4a3e6cab2a88a0cc6"
-            ],
+            "drImage": "https://img.freepik.com/free-photo/medium-shot-smiley-doctor-with-coat_23-2148814212.jpg?w=360&t=st=1693140750~exp=1693141350~hmac=3284a3fe57f44bb083dcf7bc2b741b1c1e9fa8681986ed1c3f9015d22d455810",
+            "Bio":"Dedicated medical practitioner with expertise in DDS - Dentist, Doctor of Dental Surgery. Committed to compassionate patient care and global health impact. Medical degree from Chittagong Medical.",
             "services": ["Dental Filling", "Teeth Whitening"]
           }
           

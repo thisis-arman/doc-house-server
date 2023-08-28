@@ -50,6 +50,16 @@ async function run() {
       const result = await servicesCollection.find(query).toArray();
       res.send(result);
     });
+
+    // POst services
+
+
+    app.post('/api/services', async (req, res) => {
+      const service = req.body;
+      const result = await servicesCollection.insertOne(service)
+      res.send(result);
+    })
+
     app.get("/get-service-data/:category", async (req, res) => {
       const category = req.params.category;
       const query = { category: category };
@@ -186,13 +196,20 @@ app.get('/doctors',async(req,res)=>{
   const result = await doctorsCollection.find(query).toArray();
   res.send(result)
 })
+
+
 // Get single Doctor
-app.get('/doctors/:email',async(req,res)=>{
-  const email = req.params.email;
+app.get('/api/doctors/:email',async(req,res)=>{
+  const {email} = req.params.email;
+  console.log(email)
   const query = {email : email};
+  console.log(query)
   const result = await doctorsCollection.findOne(query)
+
   res.send(result)
 })
+
+
 
 app.get('/doctor/:id',async(req,res)=>{
   const id = req.params.id;
@@ -232,6 +249,13 @@ const {updatedAbout} = req.body;
 }) */
 
 
+app.get('/api/all-info-by-id/:doctorID',async(req,res)=>{
+  const doctorID = req.params.doctorID;
+  console.log(doctorID)
+  const query ={doctorID : doctorID};
+  const doctorInfo = await mainCollection.findOne(query)
+  res.send(doctorInfo)
+})
 
 app.get('/api/all-info-by/:email',async(req,res)=>{
   const email = req.params.email;
