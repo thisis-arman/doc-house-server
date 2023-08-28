@@ -60,6 +60,13 @@ async function run() {
       res.send(result);
     })
 
+    app.get('/api/services/:email',async(req,res) => {
+      const email = req.params.email;
+      const query={email: email}
+      const result = await servicesCollection.find(query).toArray()
+      res.send(result)
+    })
+
     app.get("/get-service-data/:category", async (req, res) => {
       const category = req.params.category;
       const query = { category: category };
