@@ -62,10 +62,30 @@ async function run() {
 
     app.get('/api/services/:email',async(req,res) => {
       const email = req.params.email;
-      const query={email: email}
+      const query={doctorEmail: email}
       const result = await servicesCollection.find(query).toArray()
       res.send(result)
     })
+    app.get('/api/services-by/:id',async(req,res) => {
+      const id = req.params.id;
+      const query={_id: new ObjectId(id)}
+      const result = await servicesCollection.findOne(query)
+      res.send(result)
+    })
+
+    app.put('/api/services/:id', async (req, res) => {
+      const id = req.params.id;
+      const updatedService = req.body;
+      const query = { _id: new ObjectId(id) };
+    
+      const updateDoc = {
+        $set: updatedService, 
+      };
+    
+      const result = await servicesCollection.updateOne(query, updateDoc);
+      
+     res.send(result)
+    });
 
     app.get("/get-service-data/:category", async (req, res) => {
       const category = req.params.category;
