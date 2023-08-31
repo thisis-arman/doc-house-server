@@ -60,6 +60,13 @@ async function run() {
       res.send(result);
     })
 
+    app.get('/api/services', async (req, res) => {
+     
+      const query ={}
+      const result = await servicesCollection.find(query).toArray()
+      res.send(result);
+    })
+
     app.get('/api/services/:email',async(req,res) => {
       const email = req.params.email;
       const query={doctorEmail: email}
