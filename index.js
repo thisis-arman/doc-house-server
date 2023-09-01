@@ -82,7 +82,18 @@ async function run() {
     app.delete('/api/services-by/:id',async(req,res) => {
       const id = req.params.id;
       const query={_id: new ObjectId(id)}
-      const result = await servicesCollection.findOne(query)
+      const result = await servicesCollection.deleteOne(query)
+      res.send(result)
+    })
+    app.patch('/api/services-by/:id',async(req,res) => {
+      const id = req.params.id;
+      const query={_id: new ObjectId(id)}
+      const updateDoc = {
+        $set: {
+          status: "active",
+        },
+      };
+      const result = await servicesCollection.updateOne(query,updateDoc)
       res.send(result)
     })
 
