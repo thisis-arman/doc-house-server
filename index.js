@@ -2,7 +2,9 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 // const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const express = require("express");
 const cors = require("cors");
+const jwt = require("jsonwebtoken");
 const app = express();
+require('dotenv').config()
 const stripe = require('stripe')('sk_test_51NEOh0J6vP03PB2IYLUQMU3ol2sM8jIvCuIY7rCh7saHtgifFFFBbZxLnRtzeOByCxL7oPhtWnxnXhaSMXFWOaBc00FH0XMu1u')
 const port = process.env.PORT || 5000;
 const corsConfig = {
@@ -17,6 +19,23 @@ app.use(express.json());
 
 const data = require("./data.json");
 const { default: Stripe } = require("stripe");
+
+const verifyJWT = (req, res, next) => {
+  const authorization = req.headers.authorization;
+  if (!authorization) {
+    return res.status(401).send({ error: true, message: 'unauthorized access' });
+  }
+  // bearer token
+  const token = authorization.split(' ')[1];
+
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
+    if (err) {
+      return res.status(401).send({ error: true, message: 'unauthorized access' })
+    }
+    req.decoded = decoded;
+    next();
+  })
+}
 
 // MongoDb Starts
 // TODO:secure pass
@@ -44,6 +63,18 @@ async function run() {
     const appointmentsCollection = client.db("docHouseDB").collection("appointments");
     const mainCollection = client.db("docHouseDB").collection("main");
     const paymentCollection = client.db("docHouseDB").collection("payment");
+
+
+    // JWT
+app.post('/jwt',(req,res)=>{
+  const user = req.body;
+  console.log(user);
+  const token = jwt.sign(user,process.env.ACCESS_TOKEN_SECRET,{
+    expiresIn: '1h'
+  });
+  console.log(token);
+  res.send({token})
+})
 
     app.get("/services", async (req, res) => {
       const query = {};
@@ -79,6 +110,7 @@ async function run() {
       const result = await servicesCollection.findOne(query)
       res.send(result)
     })
+
     app.delete('/api/services-by/:id',async(req,res) => {
       const id = req.params.id;
       const query={_id: new ObjectId(id)}
@@ -138,6 +170,20 @@ async function run() {
       const result = await usersCollection.findOne(query)
       res.send(result)
     })
+
+
+    app.get('/get-users/admin/:email',async(req,res)=>{
+      const email = req.params.email;
+      // console.log(status);
+      let query = {
+        email:email
+      }
+      console.log(query)
+      
+      const result = await usersCollection.findOne(query)
+    res.send({isAdmin :result?.role ==='admin'})
+    })
+
 
     app.delete('/users/:id',async(req,res)=>{
       const id = req.params.id;
