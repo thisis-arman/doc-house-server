@@ -76,6 +76,18 @@ app.post('/jwt',(req,res)=>{
   res.send({token})
 })
 
+  // Warning: use verifyJWT before using verifyAdmin
+  
+  const verifyAdmin = async (req, res, next) => {
+    const email = req.decoded.email;
+    const query = { email: email }
+    const user = await usersCollection.findOne(query);
+    if (user?.role !== 'admin') {
+      return res.status(403).send({ error: true, message: 'forbidden message' });
+    }
+    next();
+  }
+
     app.get("/services", async (req, res) => {
       const query = {};
       const result = await servicesCollection.find(query).toArray();
