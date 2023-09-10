@@ -313,7 +313,9 @@ app.get('/api/appointments',async(req,res)=>{
 // Doctors APIs
 app.post('/doctors',async(req,res)=>{
   const doctor = req.body;
-  const query = {email: doctor.email}
+  console.log(doctor)
+  console.log(doctor)
+  const query = {email: doctor.profile.email}
   const existingDoctor = await doctorsCollection.findOne(query);
   if(existingDoctor){
     return console.log({message:"You're already in our list"})
