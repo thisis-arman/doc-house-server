@@ -22,6 +22,7 @@ const { default: Stripe } = require("stripe");
 
 const verifyJWT = (req, res, next) => {
   const authorization = req.headers.authorization;
+  console.log('authorization---',authorization)
   if (!authorization) {
     return res.status(401).send({ error: true, message: 'unauthorized access' });
   }
@@ -68,16 +69,16 @@ async function run() {
     // JWT
 app.post('/jwt',(req,res)=>{
   const user = req.body;
-  console.log(user);
+  console.log('user from jwt',user);
   const token = jwt.sign(user,process.env.ACCESS_TOKEN_SECRET,{
     expiresIn: '1h'
   });
-  console.log(token);
+  console.log('token from jwt',token);
   res.send({token})
 })
 
   // Warning: use verifyJWT before using verifyAdmin
-  
+
   const verifyAdmin = async (req, res, next) => {
     const email = req.decoded.email;
     const query = { email: email }
@@ -87,6 +88,40 @@ app.post('/jwt',(req,res)=>{
     }
     next();
   }
+ 
+
+  app.get('/users/admin/:email',verifyJWT, async (req, res) => {
+    const email = req.params.email;
+    console.log(email)
+
+    if (req.decoded?.email !== email) {
+      console.log(req.decoded?.email,{email})
+      res.send({ admin: false })
+    }
+
+    const query = { email: email }
+    const user = await usersCollection.findOne(query);
+    const result = { admin: user?.role === 'admin' }
+    res.send(result);
+  }) 
+
+
+  app.get('/users/doctor/:email',verifyJWT, async (req, res) => {
+    const email = req.params.email;
+    console.log(email)
+
+    if (req.decoded?.email !== email) {
+      console.log(req.decoded?.email,{email})
+      res.send({ doctor: false })
+    }
+
+    const query = { email: email }
+    const user = await usersCollection.findOne(query);
+    const result = { doctor: user?.role === 'doctor' }
+    res.send(result);
+  }) 
+
+
 
     app.get("/services", async (req, res) => {
       const query = {};
@@ -141,6 +176,8 @@ app.post('/jwt',(req,res)=>{
       res.send(result)
     })
 
+
+
     app.put('/api/services/:id', async (req, res) => {
       const id = req.params.id;
       const updatedService = req.body;
@@ -169,7 +206,7 @@ app.post('/jwt',(req,res)=>{
    
 
     // Get all users
-    app.get("/users", async (req, res) => {
+    app.get("/users",  async (req, res) => {
       const query = {};
       const result = await usersCollection.find(query).toArray();
       res.send(result);
