@@ -151,6 +151,15 @@ app.post('/jwt',(req,res)=>{
       const result = await servicesCollection.find(query).toArray()
       res.send(result)
     })
+    app.get('/services/:doctorID',async(req,res) => {
+      const doctorID = req.params.doctorID;
+      console.log(doctorID)
+      const query={doctorID: parseInt(doctorID)}
+      console.log(query)
+      const result = await servicesCollection.find(query).toArray()
+      res.send(result)
+    })
+
     app.get('/api/services-by/:id',async(req,res) => {
       const id = req.params.id;
       const query={_id: new ObjectId(id)}
@@ -273,14 +282,16 @@ app.post('/jwt',(req,res)=>{
 
 // Appointment APIs
 
-app.post('/appointments',async(req,res)=>{
+app.post('/api/appointments',async(req,res)=>{
   const appointment = req.body;
+  console.log(appointment)
   const result = await appointmentsCollection.insertOne(appointment);
   console.log(result)
 })
-app.get('/appointments/:email',async(req,res)=>{
-  const email = req.params.email;
-  const query = {email: email}
+
+app.get('/appointments/:doctorEmail',async(req,res)=>{
+  const email = req.params.doctorEmail;
+  const query = {doctorEmail: email}
   const result = await appointmentsCollection.find(query).toArray();
   res.send(result)
 })
@@ -289,6 +300,15 @@ app.get('/api/appointments/:doctorId',async(req,res)=>{
   const id = req.params.doctorId;
   console.log(id)
   const query ={doctorID : parseInt(id)}
+  console.log(query)
+  const appointment = await appointmentsCollection.find(query).toArray()
+  // console.log(appointment)
+  res.send(appointment)
+})
+app.get('/api/appointments-email/:userEmail',async(req,res)=>{
+  const email = req.params.userEmail;
+  
+  const query ={userEmail : email}
   console.log(query)
   const appointment = await appointmentsCollection.find(query).toArray()
   // console.log(appointment)
@@ -346,16 +366,14 @@ app.get('/doctors',async(req,res)=>{
 })
 
 
-// Get single Doctor
-app.get('/api/doctors/:email',async(req,res)=>{
-  const {email} = req.params.email;
-  console.log(email)
-  const query = {email : email};
-  console.log(query)
-  const result = await doctorsCollection.findOne(query)
+app.get('/api/doctors/:email', async (req, res) => {
+  const email = req.params.email;
 
-  res.send(result)
-})
+  const query = { "profile.email": email }; // Access email property inside profile
+  const result = await doctorsCollection.findOne(query);
+
+  res.send(result);
+});
 
 
 
